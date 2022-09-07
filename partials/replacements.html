@@ -1,4 +1,4 @@
-{{-
+{{
 .
 | replaceRE `\{\^([^\}]*)\}` "<sup>$1</sup>"
 | replaceRE `\{\_([^\}]*)\}` "<sub>$1</sub>"
@@ -14,4 +14,4 @@
 | replaceRE `\s?(—|&mdash;)\s?` " — "
 | replaceRE `(<p[^>]*>|<li[^>]*>)([“«»„])` "$1<span class='hang-quote'>$2</span>"
 | safeHTML
--}}
+}}
