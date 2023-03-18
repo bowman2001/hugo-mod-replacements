@@ -11,13 +11,13 @@ The replacements codes follow the pattern `{*text}`, where `*` is a placeholder 
 |:-----------------|:----------:|
 | `<sup>`          |    `^`     |
 | `<sub>`          |    `_`     |
-| `<kbd>`          |    `#`     |
+| `<kbd>`          |    `%`     |
 | `<var>`          |    `$`     |
 | `<mark>`         |    `!`     |
 | `<cite>`         |    `=`     |
 | `<ins>`          |    `+`     |
-| `<small>`        |  `s `   |
-| `<span lang=la>` |  `la `  |
+| `<small>`        |    `s `    |
+| `<span lang=la>` |   `la `    |
 
 The two letters in the last replacement for language identification can be chosen arbitrarily.
 
