@@ -16,14 +16,17 @@ The replacements codes follow the pattern `{*text}`, where `*` is a placeholder 
 | `<mark>`         |    `!`     |
 | `<cite>`         |    `=`     |
 | `<ins>`          |    `+`     |
+| `<br class=br-title`| `/`     |
 | `<small>`        |    `s `    |
 | `<span lang=la>` |   `la `    |
 
-**Note:** The last two regular expressions with alphabetic character identifiers are expecting a whitespace character before the content of the tag.
+- The break replacement is only meant for headings and titles and needs to be handled explicitly by its CSS class. 
 
-The two letters for the `<span lang=la>` can be chosen arbitrarily.
+- The last two regular expressions with alphabetic character identifiers are expecting a whitespace character before the content of the tag.
 
-### It’s a hack
+- The two letters for the `<span lang=la>` can be chosen arbitrarily.
+
+### It’s mostly a hack
 
 Using replacements is a working solution for missing tags, but not the best and preferred one. Goldmark allows to add extensions. Other Markdown flavors already offer syntax elements for some of these tags.
 
