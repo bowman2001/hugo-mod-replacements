@@ -16,7 +16,7 @@ The replacements codes follow the pattern `{*text}`, where `*` is a placeholder 
 | `<mark>`         |    `!`     |
 | `<cite>`         |    `=`     |
 | `<ins>`          |    `+`     |
-| `<br class=br-cond`| `/`     |
+| `<br class="br-cond"> `| `/`     |
 | `<small>`        |    `s `    |
 | `<span lang=la>` |   `la `    |
 
