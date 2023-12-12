@@ -17,14 +17,15 @@ The replacements codes follow the pattern `{?text}`, where `?` is a placeholder 
 | `<cite>`         |    `=`     |
 | `<ins>`          |    `+`     |
 | `<br class="br-cond"> `|    `/`     |
+| `<wbr>` | `w` |
 | `<small>`        |    `s `    |
 | `<span lang="la">` |   `la `    |
 
-- The break replacement is meant for conditional breaks in headings and titles and needs to be handled explicitly by its CSS class. Don’t use it without styling --- Markdown already has a line-break.
+- The break replacement `/` is meant for conditional breaks in headings and titles and needs to be handled explicitly by its CSS class. Don’t use it without CSS styling --- Markdown already has a line break.
 
-- The last two regular expressions with alphabetic character identifiers are expecting a space character before the content of the tag.
+- The last two regular expressions with alphabetic character identifiers expect a space character before the content of the tag.
 
-- The two letters for the `<span lang=la>` can be chosen arbitrarily. This replacement is not meant for complete Markdown blocks. A Markdown attribute like `{lang="la"}` can accomplish this already.
+- The two letters for the `<span lang=la>` can be chosen arbitrarily. This replacement is meant only for segments of inline text and **not** for Markdown blocks --- a block attribute like `{lang="la"}` is the solution for them.
 
 ### It’s mostly a hack
 
